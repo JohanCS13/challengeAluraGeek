@@ -1,0 +1,232 @@
+@use 'variables';
+@use 'mixins';
+@use 'initials';
+@use 'mediaQueries';
+
+
+body {
+    font-family: variables.$contentFont;
+    background-color: #fff;
+    color: variables.$grayColor;
+    
+}
+
+.header {
+    margin-bottom: 40px;
+    height: 80px;
+    text-align: center;
+    background-color: variables.$grayColor;
+
+    &__title {
+        font-family: variables.$titleFont2;
+        font-weight: 400;
+        color: variables.$cianLigth;
+        // padding: 15px 0 15px;
+        font-size: 2em;
+        span{
+            font-weight: 400;
+            font-size: 1em;
+            color: variables.$cianDark;
+        }
+    }
+}
+// inicio de connfiguración del hero
+.hero {
+    width: 375px;
+    margin: 0 auto;   
+    @include mediaQueries.desktop-view(1400px);
+    
+    .content{
+        display: flex;
+        flex-direction: column-reverse;
+        @include mediaQueries.desktop-view(1400px,unset,unset,unset,true);
+
+        .section-form {
+            margin:  0 auto;
+            width: 90%;
+            margin-bottom: 80px;
+        
+            &__title {
+                font-size: 2em;
+                margin-bottom: 50px;
+                font-family: variables.$titleFont;
+                color: variables.$cianDark;
+                font-weight: 700;
+                text-align: center;
+            }
+        
+            &__form {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                align-items: center;
+            }
+        
+            // &__label {
+            //     font-size: 1em;
+            //     margin-bottom: 5px;
+            // }
+        
+            &__input {
+                padding: 10px;
+                margin-bottom: 20px;
+                border: 2px solid variables.$cianDark;
+                border-radius: 20px;
+                font-size: 1em;
+                width: 100%;
+                gap: 30px;
+            }
+        
+            &__buttons {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                width: 100%;
+                align-items: center;
+            }
+        
+            &__button {
+                padding: 10px 20px;
+                border: none;
+                border-radius: 20px;
+                font-size: 1em;
+                cursor: pointer;
+                width: 80%;
+        
+                &--submit {
+                    background-color: variables.$grayColor;
+                    color: #fff;
+                }
+        
+                &--reset {
+                    background-color: variables.$cianDark;;
+                    color: #fff;
+                    border: 2px solid  variables.$cianDark;
+                }
+        
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+   
+}
+
+
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: center;
+    gap: 5px;
+    padding: 20px;
+    width: 100%;
+}
+
+.product__title-products{
+    font-size: 2em;
+    margin-bottom: 50px;
+    font-family: variables.$titleFont;
+    color: variables.$cianDark;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+}
+
+.card {
+    // background-color: #4a148c;
+    display: flex;
+    gap: 5px;
+    
+
+    &__content{
+    background-color: variables.$grayColor;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    width: 159px;
+    height: 195px;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    }
+    
+    &__image {
+        background-color: #fff;
+        width: 100%;
+        height: 75%;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+    &__container-info{
+
+        h3 {
+            font-size: .9em;
+            text-align: left;
+            font-family: variables.$contentFont;
+            font-weight: 100;
+
+        }
+
+    }
+    &__container-value{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5px;
+
+        &__price {
+            font-family:variables.$contentFont;
+            font-size: 1em;
+        }
+        button{
+            // background-color: #4a148c;
+            background-color: variables.$grayColor;
+            border: none;
+            color: #fff;
+            font-size: 1em;
+        }
+
+    }
+
+
+
+    &__delete-button {
+        background: none;
+        border: none;
+        color: white;
+        font-size: 1.5em;
+        cursor: pointer;
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+
+        &:hover {
+            color: #ff0000;
+        }
+    }
+}
+
+// termina configuración del main
+
+.footer {
+    margin-top: 20px;
+    background-color: variables.$grayColor;
+    text-align: center;
+    padding: 15px 0 0 0;
+
+    &__title{
+        font-family: variables.$titleFont2;
+        font-weight: 400;
+        color: variables.$cianLigth;
+        // padding: 15px 0 15px;
+        font-size: 2em;
+    }
+    p{
+        font-size: .6em;
+        font-family: variables.$contentFont;
+        color: variables.$cianLigth;
+        
+    }
+}
+
+// diseño responsivo para otras pantallas

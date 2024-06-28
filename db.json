@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "id": "354b",
+      "name": "Abba",
+      "price": 70,
+      "image": "https://www.unimart.com/cdn/shop/files/TOT_8_4f7ef759-39b9-4d59-8f9a-7ffa79554c67.jpg?v=1686846513"
+    },
+    {
+      "id": "af79",
+      "name": "pantaloneta media",
+      "price": 100,
+      "image": "https://saetasport.vtexassets.com/arquivos/ids/167484-500-auto?v=638491427993330000&width=500&height=auto&aspect=true"
+    },
+    {
+      "id": "724a",
+      "name": "teni futsal",
+      "price": 80,
+      "image": "https://saetasport.vtexassets.com/arquivos/ids/166938-500-auto?v=638324626801070000&width=500&height=auto&aspect=true"
+    },
+    {
+      "id": "76fa",
+      "name": "zapatila parap jugar",
+      "price": 90,
+      "image": "https://saetasport.vtexassets.com/arquivos/ids/167116-500-auto?v=638367032285300000&width=500&height=auto&aspect=true"
+    }
+  ]
+}

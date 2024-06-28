@@ -1,0 +1,23 @@
+@use 'variables';
+
+
+@mixin desktop-view ($width,$heigth:unset, $font-size:unset,$bg-desktop:unset,$f-direction:unset,$text-aling:unset){
+    @media(min-width: 1440px){
+        width: $width;
+        height: $heigth;
+        font-size: $font-size;
+        // @if $bg-desktop == true{
+        //     background-image: url(../images/bg-hero-desktop.svg);
+        // }
+        @if $f-direction == true{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            // align-content: center;
+            
+        // }
+        // @if $text-aling == true{
+        //     text-align: initial;
+        // }
+    }
+}}
